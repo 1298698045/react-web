@@ -1,0 +1,18 @@
+@import '~antd/lib/style/themes/default.less';
+
+.downloadCard {
+	:global(.ant-card-actions) {
+		> li {
+			margin: 0;
+			span {
+				display: block;
+				a {
+					padding: 12px 0;
+					&:hover {
+						background: @white;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,80 @@
+@import '~antd/lib/style/themes/default.less';
+
+.description {
+	:global(.antd-pro-components-description-list-index-detail) {
+		line-height: 24px;
+	}
+}
+.courseArrange{
+	position: absolute;
+	right: 0;
+	top: 1px;
+	background: #fc541b;
+	z-index: 9;
+	width: 18px;
+	height: 18px;
+	line-height: 16px;
+	border-bottom-left-radius: 3px;
+	text-align: center;
+	display: block;
+	color: #fff;
+	font-size: 12px;
+}
+.table_1 {
+	.date_ctnr {
+		text-align: center;
+		background-color: @white;
+		box-shadow: 1px 0 0 0 #e8e8e8, 0 1px 0 0 #e8e8e8, 1px 1px 0 0 #e8e8e8, 1px 0 0 0 #e8e8e8 inset, 0 1px 0 0 #e8e8e8 inset;
+		padding: 10px;
+		cursor: pointer;
+		transition: all 0.3s;
+		&:hover {
+			position: relative;
+			z-index: 1;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+		}
+		&.active {
+			color: @white;
+			background-color: @primary-color;
+		}
+		.date {
+			font-size: 20px;
+			font-weight: bold;
+		}
+	}
+	:global(.ant-card-grid) {
+		padding: 10px 0px;
+		text-align: center;
+		cursor: pointer;
+		div {
+			cursor: pointer;
+		}
+	}
+	:global(.ant-tag) {
+		margin: 5px;
+	}
+	.calendarCard {
+		width: 20%;
+		min-width: 160px;
+		&.green {
+			background-color: #84d6cf;
+		}
+		&.gray {
+			background-color: #eee;
+			//pointer-events: none;
+		}
+		&.orange {
+			background-color: orange;
+		}
+		&.red {
+			background-color: #fb5b71;
+			//pointer-events: none;
+		}
+		&.white {
+			background-color: white;
+		}
+	}
+}
+.aTag {
+	color: @primary-color;
+}

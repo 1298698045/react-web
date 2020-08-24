@@ -1,0 +1,25 @@
+@import '~antd/lib/style/themes/default.less';
+
+.downloadCard {
+	:global(.ant-avatar) {
+		width: 56px;
+		height: 56px;
+	}
+	:global(.ant-card-actions) {
+		> li {
+			margin: 0;
+			span {
+				display: block;
+				a {
+					padding: 12px 0;
+					&:hover {
+						background: @white;
+					}
+				}
+			}
+		}
+	}
+	:global(.ant-avatar) {
+		border-radius: 0;
+	}
+}
